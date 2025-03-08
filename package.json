@@ -1,0 +1,28 @@
+{
+    "name": "mern-socketio-project",
+    "version": "1.0.0",
+    "description": "MERN Stack application with Socket.io for real-time communication",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "server": "cd server && npm run dev",
+        "client": "cd client && npm start",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "mern",
+        "react",
+        "node",
+        "express",
+        "mongodb",
+        "socket.io",
+        "bootstrap"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
